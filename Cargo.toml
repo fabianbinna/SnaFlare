@@ -1,6 +1,8 @@
 [package]
 name = "SnaFlare"
-version = "0.1.2"
+version = "0.1.3"
+authors = ["fbin"]
+description = "Group snaffler output by similar findings."
 edition = "2021"
 
 [dependencies]

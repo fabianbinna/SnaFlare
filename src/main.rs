@@ -29,7 +29,6 @@ fn load_snaffler_log(input_path: PathBuf) -> Vec<SnafflerRecord> {
     }
     let file_content = cow.into_owned();
 
-    // let file_content = read_to_string(input_path).expect("Failed to read file");
     file_content.par_lines()
         .filter_map(|line| {
             match line.parse::<SnafflerRecord>() {
